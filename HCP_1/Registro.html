@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+*** INTERFACE PARA O REGISTRO DE NOVOS USUÁRIOS ***
+Carlos Barros, Ana Marilza Pernas, Lisane Brisolara
+-->
+<html>
+    <head>
+        <title>Horas Complementares Registro - UFPel - CDTec</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="Estilo.css">
+    </head>
+    <body>
+        <header id="hRegistro">
+            <figure class="header">
+                <img src="_imagens/indexHeader-menor-melhor.png">
+            </figure> 
+        </header>
+        <div>
+            <form method="post" id="fRegistro" action="dadosRegistro.php">
+                <fieldset class="registro">
+                    <p><label for="iMatr">Matrícula/SIAPE </label><input type="number" name="nMatr" id="iMatr" size="10" maxlength="10" required><label for="iNivel" > Nível </label>
+                  <select name="nNivel" id="iCurr">
+                      <option value="0" selected="">aluno</option>
+                      <option value="1">cordenador</option>
+                      <option value="2">administrador</option>
+                  </select></p>
+              <p><label for="cNome">Nome </label> <input type="text" name="nNome" id="iNome" size="40" maxlength="80" placeholder="Digite o Nome Completo" required/></p>
+              <p><label for="iEmail">E-MAIL </label> <input type="email" name="nEmail" id="iEmail" size="40" maxlength="80" required></p>
+              <p><label for="iTel">Telefone </label> <input type="tel" name="nTel" id="iTel" size="40" maxlength="20"></p>
+              <p> <label>Curso: </label> <br>
+                  <input type="radio" name="nCurso" id="iCiencias" value="Ciências da Computação" checked><label for="iCiencias"> Ciências da Computação </label><br>
+                  <input type="radio" name="nCurso" id="iEngenharia" value="Engenharia da Computação"> <label for="iEngenharia">Engenharia da Computação </label>
+              </p>
+                      <p><label for="iCurr">Currículo </label>
+                  <select name="nCurr" id="iCurr">
+                      <optgroup label="Engenharia"><option value="2015" selected="">2015</option>
+                                                   <option value="2008">2008</option>
+                      </optgroup>
+                      <optgroup label="Ciências"><option value="2015">2015</option>
+                                                 <option value="2000">2010</option>
+                      </optgroup>
+                  </select></p>
+                  <p><label>Provável Formatura: </label><br><label for="iAno"> Ano </label><input type="number" name="nAno" id="iAno" min="2018" max="2099" required=""><label for="iSem"> Semestre </label><input type="number" name="nSem" id="iSem" size="1" min="1" max="2" required></p>
+              <p><label for="iSenha1">Senha </label><input type="password" name="nSenha1" id="iSenha1" size="8" maxlength="8" required></p>
+              <p><label for="iSenha2">Repetir Senha </label><input type="password" name="nSenha2" id="iSenha2" maxlength="8" size="8" required></p>
+              
+              <script>
+    var password = document.getElementById("iSenha1"),
+        confirm_password = document.getElementById("iSenha2");
+
+function validatePassword(){
+  if(password.value !== confirm_password.value) {
+    confirm_password.setCustomValidity("Senhas diferentes!");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+              </script>
+              <input type="submit" value="ENVIAR">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

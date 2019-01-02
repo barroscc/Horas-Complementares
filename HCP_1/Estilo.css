@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/10/2018, 22:54:55
+    Author     : Carlos Barros, Ana Marilza Pernas, Lisane Brisolara
+*/
+@charset "utf-8";
+      
+       fieldset.login{
+                background-color:  rgba(10,10,10,0.1);
+               position: absolute;
+               left: 50%;
+               width: 100px;
+               top:120px;
+               margin-left:-100px;
+		
+            }
+            fieldset.busca{
+                background-color:  rgba(10,10,10,0.1);
+               position: absolute;
+               left: 50%;
+               width: 100px;
+               top:20px;
+               margin-left:-100px;
+		
+            }
+       figure.header img{
+                position: absolute;
+                left: 50%;
+                margin-left:-180px;
+               }
+        span.index{
+                   position: absolute;
+                   top: 130px;
+                   left: 50%;
+                   margin-left:-230px;
+               }
+            
+       fieldset.registro{
+                background-color:  rgba(10,10,10,0.1);
+                position: absolute;
+                left: 35%;
+                top:120px;
+            }
+        fieldset.admin{
+                background-color:  rgba(10,10,10,0.1);
+            }
+        fieldset.remover{
+                background-color:  rgba(10,10,10,0.1);
+                position: absolute;
+                left: 35%;
+                margin-left:-180px;
+            }
+            
+        p{
+               text-align: justify;
+               font-size:xx-small;
+               } 
+        
+        input.teste {
+                   position: relative;
+                   top: 230px;
+                   left: 180px;
+                       
+               }
+        
+        figure.headerUser1 img{
+                   position: absolute;
+                   top: 10px;
+                   right: 150px;
+                   
+               }
+        figure.headerUser2 img{
+                   position: absolute;
+                   top: 10px;
+                   right: 20px;
+               }
+        header#hAluno{
+                   border-width: 0 0 1px 0;
+               }
+               hr{
+                   border-color: #aaa;
+                   box-sizing: border-box;
+                   width: 100%;
+               }
+               div{
+                   font-size:smaller;
+               }
+              
+               
+               div#dHorasTotais {
+                   position: absolute;
+                   left: 220px;
+                   top: 190px;
+               }
+               
+               
+              
+table tr.dif td {
+	background: #99a; /* Linhas com fundo cinza */
+        
+	}
+         table tr td { /* Toda a tabela com fundo creme */
+	background: #ccd;
+	} 
+        td {
+            border: 2px solid white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }

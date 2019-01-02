@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+*** INTERFACE REGISTRO NOVA ATIVIDADE COMPLEMENTAR pelo coordenador ****
+
+ESTE DOCUMENTO NAO ESTA SENDO USADO ATÉ A IMPLEMENTACAO DAS FUNCIONALIDADES DE ALTERACOES E CRIACAO DE NOVOS CURRÍCULOS
+ELE ADICIONA ATIVIDADE NO BANCO DE DADOS MAS NAO ADICIONA NO MENU DE NOVAS SUBMISSOES DE ATIVIDADES DO ALUNO O QUE PRECISA FAZER DIRETAMENTE NO CÓDICO HTML NA MAO
+Carlos Barros, Ana Marilza Pernas, Lisane Brisolara
+
+-->
+<html>
+    <head>
+        <title> Criar Nova Atividade Complementar UFPel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Estilo.css">
+    </head>
+    <body class="user">
+        <header id="hAluno" class="headerText">
+            <br>
+            <?php echo $dado[2] ?> <br>
+            <?php echo $dado2[2] ?> 
+  
+            <figure class="headerUser1">
+                <img src="_imagens/ComputacaoUfpel-menor.png">
+            </figure >
+            <figure class="headerUser2" >
+                <img src="_imagens/UFPEL-menor.JPG">
+            </figure>
+        </header>
+        <br><br>
+        <hr>
+        <div id="dHorasDetalhe">
+             Criar Nova Atividade<br><br>
+            <form method="post" id="fRegistro" action="dadosNovaAtividade.php">
+                <fieldset class="registro">
+                    <p><label for="iNomeAtiv">Nome da Atividade </label><input type="text" name="nNomeAtiv" id="iNomeAtiv" size="50" required></p>
+                    <p> <label for="iClasseDefault" > Classe Default </label><select name="nClasseDefault" id="iClasseDefault" size="1" required="">
+                      <option value="Ens" >Ensino</option>
+                      <option value="Pesq">Pesquisa</option>
+                      <option value="Ext">Extensão</option>
+                                                 
+                  </select>
+              <label for="cUnidade">Unidade </label> <select name="nUnidade" id="iUnidade" size="1" required>
+                      <option value="horas" >Horas</option>
+                      <option value="Semestre">Semestre</option>
+                      <option value="Unidade">Unidade</option>
+              </select>
+                    <label for="iValorUnidade">Valor da Unidade </label> <input type="text" name="nValorUnidade" id="iValorUnidade" size="3" required>
+                    <label for="iMaxHoras">Máximo de Horas </label> <input type="text" name="nMaxHoras" id="iMaxHoras" size="3" required></p>
+                 
+              <input type="submit" value="Salvar">
+                </fieldset>
+                
+</form>
+        
+        
+        </div>
+    </body>
+</html>
